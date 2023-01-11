@@ -30,7 +30,7 @@ function DarkModeToggle() {
   };
 
   return (
-    <div className="absolute bottom-0 right-0 m-4">
+    <div className="fixed bottom-0 right-0 m-4">
       <button
         onClick={toggleDarkMode}
         className={`flex items-center   font-medium  rounded-full p-2 shadow-lg focus:outline-none focus:ring-2  focus:ring-opacity-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 dark:text-yellow-600 dark:bg-white  dark:hover:text-yellow-800 dark:focus:ring-yellow-900 text-gray-100 bg-gray-800 hover:text-gray-300 focus:ring-indigo-600`}

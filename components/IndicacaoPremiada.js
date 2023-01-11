@@ -4,36 +4,36 @@ export default function IndicacaoPremiada({ open, setOpen }) {
   return (
     <>
       {/* <!-- Announcement Banner --> */}
-      <div class="bg-gradient-to-r from-purple-900 via-purple-800  to-blue-500">
-        <div class="max-w-[85rem] px-4 py-4 sm:px-6 lg:px-8 mx-auto">
+      <div className="bg-gradient-to-r from-purple-900 via-purple-800  to-blue-500">
+        <div className="max-w-[85rem] px-4 py-4 sm:px-6 lg:px-8 mx-auto">
           {/* <!-- Grid --> */}
-          <div class="grid justify-center md:grid-cols-2 md:justify-between md:items-center gap-2">
-            <div class="text-center md:text-left">
-              <p class="text-xs text-white/[.8] uppercase tracking-wider">
+          <div className="grid justify-center md:grid-cols-2 md:justify-between md:items-center gap-2">
+            <div className="text-center md:text-left">
+              <p className="text-xs text-white/[.8] uppercase tracking-wider">
                 Indicação Premiada
               </p>
-              <p class="mt-1 text-white font-medium">
+              <p className="mt-1 text-white font-medium">
                 Indique nosso produto e ganha premios incríveis
               </p>
             </div>
             {/* <!-- End Col --> */}
 
-            <div class="mt-3 text-center md:text-left md:flex md:justify-end md:items-center">
+            <div className="mt-3 text-center md:text-left md:flex md:justify-end md:items-center">
               <Link
                 href="/indicacao-premiada"
-                class="relative rounded px-5 py-2.5 overflow-hidden group bg-purple-800  hover:bg-gradient-to-r hover:from-purple-500 hover:to-purple-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-purple-400 transition-all ease-out duration-300"
+                className="relative rounded px-5 py-2.5 overflow-hidden group bg-purple-800  hover:bg-gradient-to-r hover:from-purple-500 hover:to-purple-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-purple-400 transition-all ease-out duration-300"
               >
-                <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
-                <span class="relative">Saiba mais</span>
+                <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+                <span className="relative">Saiba mais</span>
               </Link>
               <button
                 type="button"
-                class="inline-flex rounded-md p-1.5 ml-2 text-white/[.8] hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-600 focus:ring-white"
+                className="inline-flex rounded-md p-1.5 ml-2 text-white/[.8] hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-600 focus:ring-white"
                 onClick={() => setOpen(!open)}
               >
-                <span class="sr-only">Dismiss</span>
+                <span className="sr-only">Dismiss</span>
                 <svg
-                  class="h-3 w-3"
+                  className="h-3 w-3"
                   width="16"
                   height="16"
                   viewBox="0 0 16 16"
