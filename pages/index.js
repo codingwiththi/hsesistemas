@@ -16,9 +16,10 @@ export default function Home() {
       {indicacaoOpen && (
         <IndicacaoPremiada open={indicacaoOpen} setOpen={setIndicacaoOpen} />
       )}
-      <DarkModeToggle />
-      <Navbar />
-      <div className="px-4 h-screen dark:bg-gray-800 ">
+      {/* <DarkModeToggle /> */}
+      <div className="bg-gradient-to-br from-blue-100 via-[#89c4e0] to-[#1cb1da] dark:bg-gray-800 h-screen ">
+        <Navbar />
+
         <HeroSection />
       </div>
       <div className="p-4  bg-blue-900 dark:bg-gray-800 ">
