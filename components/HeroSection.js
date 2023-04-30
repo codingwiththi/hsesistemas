@@ -2,6 +2,7 @@ import Image from "next/image";
 import img from "../public/heroimg.png";
 import primepisos from "../public/primepisos.png";
 import Link from "next/link";
+import FormHero from "../components/FormHero";
 
 const handleClick = (e, link) => {
   e.preventDefault();
@@ -258,7 +259,8 @@ export default function HeroSection() {
           {/* <!-- End Col --> */}
 
           <div className="hidden    justify-center items-center  sm:flex flex-col bg-gray-50 rounded-lg shadow-lg border border-[#1cb1da] p-4 w-1/3">
-            <Image src={img} alt="Picture of the author" width={450} />
+            {/* <Image src={img} alt="Picture of the author" width={450} /> */}
+            <FormHero />
           </div>
           {/* <!-- End Col --> */}
         </div>
