@@ -1,31 +1,23 @@
 import Image from "next/image";
-import logo from "../public/logohse.jpg";
+import logo from "../public/logohse.png";
 
 export default function Navbar() {
   return (
     <>
-      <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white border-b border-gray-200 text-sm py-3 sm:py-0 dark:bg-gray-200 dark:border-gray-700">
+      <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full  text-sm py-3 sm:py-0 ">
         <nav
           className="relative max-w-7xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
           aria-label="Global"
         >
-          <div className="flex items-center justify-between">
+          <div className="flex items-center sm:justify-between justify-center ">
             <Image
               src={logo}
-              alt="Picture of the author"
-              width={150}
-              height={150}
-              // blurDataURL="data:..." automatically provided
-              // placeholder="blur" // Optional blur-up while loading
+              alt="HSE Sistemas"
+              width={200}
+              height={200}
+              className="py-4"
             />
-            {/* <a
-              className="flex-none text-xl font-semibold dark:text-white"
-              href="#"
-              aria-label="Brand"
-            >
-              LOGO
-            </a> */}
-            <div className="sm:hidden">
+            {/* <div className="sm:hidden">
               <button
                 type="button"
                 className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-gray-800 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-800 dark:hover:text-white dark:focus:ring-offset-gray-800"
@@ -55,9 +47,9 @@ export default function Navbar() {
                   <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
                 </svg>
               </button>
-            </div>
+            </div> */}
           </div>
-          <div
+          {/* <div
             id="navbar-collapse-with-animation"
             className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
           >
@@ -87,7 +79,7 @@ export default function Navbar() {
                 Contato
               </a>
             </div>
-          </div>
+          </div> */}
         </nav>
       </header>
     </>

@@ -1,6 +1,6 @@
 export default function AboutMe() {
   return (
-    <>
+    <section id="aboutme">
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto ">
         <div className="grid md:grid-cols-2 gap-12">
           <div className="lg:w-3/4">
@@ -140,6 +140,6 @@ export default function AboutMe() {
         </div>
         {/* <!-- End Grid --> */}
       </div>
-    </>
+    </section>
   );
 }
