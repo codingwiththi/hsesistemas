@@ -1,11 +1,64 @@
+import Image from "next/image";
 import React from "react";
+import Background from "../../public/images/background.png";
+import { AcademicCapIcon } from "@heroicons/react/24/outline";
+import Card from "./Card";
 
 interface AboutMeProps {}
 
 const AboutMe: React.FC<AboutMeProps> = () => {
   return (
     <section id="aboutme">
-      <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto ">
+      <div className="relative p-4  bg-[#fafafa] dark:bg-gray-800">
+        <svg
+          className="absolute z-0 w-28 "
+          viewBox="0 0 255 260"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect y="97" width="163" height="163" fill="#052F48" />
+          <rect x="94" width="161" height="146" fill="#1CB1DA" />
+        </svg>
+
+        <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14  z-10 mx-20">
+          <div className="flex flex-col items-center justify-center space-y-6 lg:space-y-10 text-center">
+            <h2 className="text-3xl  font-bold lg:text-4xl text-blue-950">
+              Conheça a HSE Sistemas - especialistas em tecnologia para negócios
+            </h2>
+            <p className="mt-3 text-gray-800">
+              Com 8 anos de experiência, a HSE Sistemas é uma empresa líder em
+              tecnologia e serviços de ponta. Oferecemos soluções adaptáveis
+              para negócios de todos os setores, sempre buscando a melhoria
+              contínua para atingir, juntos com nossos clientes, resultados
+              expressivos e duradouros.
+            </p>
+            <div className="flex flex-row gap-4">
+              <Card
+                icon={AcademicCapIcon}
+                title="Título do Cartão"
+                description="Esta é a descrição do cartão. Aqui você pode colocar mais informações sobre o assunto do cartão."
+              />
+              <Card
+                icon={AcademicCapIcon}
+                title="Título do Cartão"
+                description="Esta é a descrição do cartão. Aqui você pode colocar mais informações sobre o assunto do cartão."
+              />
+              <Card
+                icon={AcademicCapIcon}
+                title="Título do Cartão"
+                description="Esta é a descrição do cartão. Aqui você pode colocar mais informações sobre o assunto do cartão."
+              />
+              <Card
+                icon={AcademicCapIcon}
+                title="Título do Cartão"
+                description="Esta é a descrição do cartão. Aqui você pode colocar mais informações sobre o assunto do cartão."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto ">
         <div className="grid md:grid-cols-2 gap-12">
           <div className="lg:w-3/4">
             <h2 className="text-3xl  font-bold lg:text-4xl text-white">
@@ -138,12 +191,9 @@ const AboutMe: React.FC<AboutMeProps> = () => {
                 </p>
               </div>
             </div>
-            {/* <!-- End Icon Block --> */}
           </div>
-          {/* <!-- End Col --> */}
         </div>
-        {/* <!-- End Grid --> */}
-      </div>
+      </div> */}
     </section>
   );
 };
