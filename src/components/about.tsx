@@ -1,7 +1,64 @@
-export default function AboutMe() {
+import Image from "next/image";
+import React from "react";
+import Background from "../../public/images/background.png";
+import { AcademicCapIcon } from "@heroicons/react/24/outline";
+import Card from "./Card";
+
+interface AboutMeProps {}
+
+const AboutMe: React.FC<AboutMeProps> = () => {
   return (
     <section id="aboutme">
-      <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto ">
+      <div className="relative p-4  bg-[#fafafa] dark:bg-gray-800">
+        <svg
+          className="absolute z-0 w-28 "
+          viewBox="0 0 255 260"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect y="97" width="163" height="163" fill="#052F48" />
+          <rect x="94" width="161" height="146" fill="#1CB1DA" />
+        </svg>
+
+        <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14  z-10 mx-20">
+          <div className="flex flex-col items-center justify-center space-y-6 lg:space-y-10 text-center">
+            <h2 className="text-3xl  font-bold lg:text-4xl text-blue-950">
+              Conheça a HSE Sistemas - especialistas em tecnologia para negócios
+            </h2>
+            <p className="mt-3 text-gray-800">
+              Com 8 anos de experiência, a HSE Sistemas é uma empresa líder em
+              tecnologia e serviços de ponta. Oferecemos soluções adaptáveis
+              para negócios de todos os setores, sempre buscando a melhoria
+              contínua para atingir, juntos com nossos clientes, resultados
+              expressivos e duradouros.
+            </p>
+            <div className="flex flex-row gap-4">
+              <Card
+                icon={AcademicCapIcon}
+                title="Título do Cartão"
+                description="Esta é a descrição do cartão. Aqui você pode colocar mais informações sobre o assunto do cartão."
+              />
+              <Card
+                icon={AcademicCapIcon}
+                title="Título do Cartão"
+                description="Esta é a descrição do cartão. Aqui você pode colocar mais informações sobre o assunto do cartão."
+              />
+              <Card
+                icon={AcademicCapIcon}
+                title="Título do Cartão"
+                description="Esta é a descrição do cartão. Aqui você pode colocar mais informações sobre o assunto do cartão."
+              />
+              <Card
+                icon={AcademicCapIcon}
+                title="Título do Cartão"
+                description="Esta é a descrição do cartão. Aqui você pode colocar mais informações sobre o assunto do cartão."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto ">
         <div className="grid md:grid-cols-2 gap-12">
           <div className="lg:w-3/4">
             <h2 className="text-3xl  font-bold lg:text-4xl text-white">
@@ -25,8 +82,8 @@ export default function AboutMe() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z"
                   fill="currentColor"
                 />
@@ -134,12 +191,11 @@ export default function AboutMe() {
                 </p>
               </div>
             </div>
-            {/* <!-- End Icon Block --> */}
           </div>
-          {/* <!-- End Col --> */}
         </div>
-        {/* <!-- End Grid --> */}
-      </div>
+      </div> */}
     </section>
   );
-}
+};
+
+export default AboutMe;

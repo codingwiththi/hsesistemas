@@ -1,18 +1,18 @@
 export default function Footer() {
   return (
     <>
-      <footer class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+      <footer className="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
         {/* <!-- Grid --> */}
-        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-10 ">
-          <div class="col-span-2 hidden lg:col-span-1 lg:block">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-10 ">
+          <div className="col-span-2 hidden lg:col-span-1 lg:block">
             <a
-              class="flex-none text-xl font-semibold dark:text-white"
+              className="flex-none text-xl font-semibold text-white"
               href="#"
               aria-label="Brand"
             >
               HSE Sistemas
             </a>
-            <p class="mt-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+            <p className="mt-3 text-xs sm:text-sm  text-gray-400">
               © 2023 HSE Sistemas.
             </p>
           </div>
@@ -20,14 +20,14 @@ export default function Footer() {
 
           <div className=" col-span-4 flex flex-row w-full gap-6 justify-end ">
             <div className="w-1/4">
-              <h4 class="text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">
+              <h4 className="text-xs font-semibold  uppercase text-gray-100">
                 Produtos
               </h4>
 
-              <div class="mt-3 grid space-y-3 text-sm">
+              <div className="mt-3 grid space-y-3 text-sm">
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="inline-flex gap-x-2  text-gray-400 hover:text-gray-200"
                     href="#"
                   >
                     Produto 1
@@ -35,7 +35,7 @@ export default function Footer() {
                 </p>
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="inline-flex gap-x-2  text-gray-400 hover:text-gray-200"
                     href="#"
                   >
                     Produto 2
@@ -43,7 +43,7 @@ export default function Footer() {
                 </p>
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="inline-flex gap-x-2  text-gray-400 hover:text-gray-200"
                     href="#"
                   >
                     Produto 3
@@ -51,7 +51,7 @@ export default function Footer() {
                 </p>
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="inline-flex gap-x-2  text-gray-400 hover:text-gray-200"
                     href="#"
                   >
                     Produto 4
@@ -62,14 +62,14 @@ export default function Footer() {
             {/* <!-- End Col --> */}
 
             <div className="w-1/4">
-              <h4 class="text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">
+              <h4 className="text-xs font-semibold  uppercase text-gray-100">
                 Empresa
               </h4>
 
-              <div class="mt-3 grid space-y-3 text-sm">
+              <div className="mt-3 grid space-y-3 text-sm">
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="inline-flex gap-x-2  text-gray-400 hover:text-gray-200"
                     href="#"
                   >
                     Sobre nós
@@ -77,7 +77,7 @@ export default function Footer() {
                 </p>
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="inline-flex gap-x-2  text-gray-400 hover:text-gray-200"
                     href="#"
                   >
                     Blog
@@ -85,18 +85,18 @@ export default function Footer() {
                 </p>
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="inline-flex gap-x-2  text-gray-400 hover:text-gray-200"
                     href="#"
                   >
                     Carreira
                   </a>{" "}
-                  <span class="inline text-blue-600 dark:text-blue-500">
+                  <span className="inline  text-blue-500">
                     — Estamos contratando
                   </span>
                 </p>
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="inline-flex gap-x-2  text-gray-400 hover:text-gray-200"
                     href="#"
                   >
                     Parceiros
@@ -107,14 +107,14 @@ export default function Footer() {
             {/* <!-- End Col --> */}
 
             <div className="w-1/4">
-              <h4 class="text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">
+              <h4 className="text-xs font-semibold  uppercase text-gray-100">
                 Recursos
               </h4>
 
-              <div class="mt-3 grid space-y-3 text-sm">
+              <div className="mt-3 grid space-y-3 text-sm">
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="inline-flex gap-x-2  text-gray-400 hover:text-gray-200"
                     href="#"
                   >
                     Comunidade
@@ -122,7 +122,7 @@ export default function Footer() {
                 </p>
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="inline-flex gap-x-2  text-gray-400 hover:text-gray-200"
                     href="#"
                   >
                     Suporte
@@ -130,7 +130,7 @@ export default function Footer() {
                 </p>
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="inline-flex gap-x-2  text-gray-400 hover:text-gray-200"
                     href="#"
                   >
                     Manuais
@@ -138,7 +138,7 @@ export default function Footer() {
                 </p>
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="inline-flex gap-x-2  text-gray-400 hover:text-gray-200"
                     href="#"
                   >
                     Novidades
@@ -146,7 +146,7 @@ export default function Footer() {
                 </p>
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="inline-flex gap-x-2  text-gray-400 hover:text-gray-200"
                     href="#"
                   >
                     Status
@@ -157,79 +157,79 @@ export default function Footer() {
             {/* <!-- End Col --> */}
 
             {/* <div className="w-full">
-              <h4 class="text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">
-                Developers
-              </h4>
-
-              <div class="mt-3 grid space-y-3 text-sm">
-                <p>
-                  <a
-                    class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                    href="#"
-                  >
-                    Api
-                  </a>
-                </p>
-                <p>
-                  <a
-                    class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                    href="#"
-                  >
-                    Status
-                  </a>
-                </p>
-                <p>
-                  <a
-                    class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                    href="#"
-                  >
-                    GitHub
-                  </a>{" "}
-                  <span class="inline text-blue-600 dark:text-blue-500">
-                    — New
-                  </span>
-                </p>
-              </div>
-
-              <h4 class="mt-7 text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">
-                Industries
-              </h4>
-
-              <div class="mt-3 grid space-y-3 text-sm">
-                <p>
-                  <a
-                    class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                    href="#"
-                  >
-                    Financial Services
-                  </a>
-                </p>
-                <p>
-                  <a
-                    class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                    href="#"
-                  >
-                    Education
-                  </a>
-                </p>
-              </div>
-            </div> */}
+                <h4 class="text-xs font-semibold text-gray-900 uppercase text-gray-100">
+                  Developers
+                </h4>
+  
+                <div class="mt-3 grid space-y-3 text-sm">
+                  <p>
+                    <a
+                      class="inline-flex gap-x-2  text-gray-400 hover:text-gray-200"
+                      href="#"
+                    >
+                      Api
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      class="inline-flex gap-x-2  text-gray-400 hover:text-gray-200"
+                      href="#"
+                    >
+                      Status
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      class="inline-flex gap-x-2  text-gray-400 hover:text-gray-200"
+                      href="#"
+                    >
+                      GitHub
+                    </a>{" "}
+                    <span class="inline text-blue-600 text-blue-500">
+                      — New
+                    </span>
+                  </p>
+                </div>
+  
+                <h4 class="mt-7 text-xs font-semibold text-gray-900 uppercase text-gray-100">
+                  Industries
+                </h4>
+  
+                <div class="mt-3 grid space-y-3 text-sm">
+                  <p>
+                    <a
+                      class="inline-flex gap-x-2  text-gray-400 hover:text-gray-200"
+                      href="#"
+                    >
+                      Financial Services
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      class="inline-flex gap-x-2  text-gray-400 hover:text-gray-200"
+                      href="#"
+                    >
+                      Education
+                    </a>
+                  </p>
+                </div>
+              </div> */}
           </div>
           {/* <!-- End Col --> */}
         </div>
         {/* <!-- End Grid --> */}
 
-        <div class="pt-5 mt-5 border-t border-gray-200 dark:border-gray-700">
-          <div class="sm:flex sm:justify-between sm:items-center">
-            <div class="flex items-center gap-x-3">
-              <div class="hs-dropdown relative inline-flex [--placement:top-left]">
+        <div className="pt-5 mt-5 border-t  border-gray-700">
+          <div className="sm:flex sm:justify-between sm:items-center">
+            <div className="flex items-center gap-x-3">
+              <div className="hs-dropdown relative inline-flex [--placement:top-left]">
                 <button
                   id="footer-language-dropdown"
                   type="button"
-                  class="hs-dropdown-toggle py-2 px-3 inline-flex justify-center items-center gap-2 rounded-md border bg-white text-gray-700 align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-gray-800 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
+                  className="hs-dropdown-toggle py-2 px-3 inline-flex justify-center items-center gap-2 rounded-md border bg-white text-gray-700 align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm  hover:bg-slate-800 border-gray-700 text-gray-400 hover:text-white focus:ring-offset-gray-800"
                 >
                   <svg
-                    class="w-3 h-3 rounded-full"
+                    className="w-3 h-3 rounded-full"
                     xmlns="http://www.w3.org/2000/svg"
                     id="flag-icon-css-us"
                     viewBox="0 0 512 512"
@@ -261,7 +261,7 @@ export default function Footer() {
                   </svg>
                   English (US)
                   <svg
-                    class="hs-dropdown-open:rotate-180 w-2.5 h-2.5 text-gray-600"
+                    className="hs-dropdown-open:rotate-180 w-2.5 h-2.5 text-gray-600"
                     width="16"
                     height="16"
                     viewBox="0 0 16 16"
@@ -278,15 +278,15 @@ export default function Footer() {
                 </button>
 
                 <div
-                  class="hs-dropdown-menu w-40 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden z-10 bg-white shadow-md rounded-lg p-2 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700"
+                  className="hs-dropdown-menu w-40 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden z-10 bg-white shadow-md rounded-lg p-2 bg-gray-800 border border-gray-700 divide-gray-700"
                   aria-labelledby="footer-language-dropdown"
                 >
                   <a
-                    class="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                    className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 text-gray-400 hover:bg-gray-700 hover:text-gray-300"
                     href="#"
                   >
                     <svg
-                      class="w-3.5 h-3.5 rounded-full"
+                      className="w-3.5 h-3.5 rounded-full"
                       xmlns="http://www.w3.org/2000/svg"
                       id="flag-icon-css-us"
                       viewBox="0 0 512 512"
@@ -321,15 +321,15 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div class="space-x-4 text-sm ml-4">
+              <div className="space-x-4 text-sm ml-4">
                 <a
-                  class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2  text-gray-400 hover:text-gray-200"
                   href="#"
                 >
                   Termos e condições
                 </a>
                 <a
-                  class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2  text-gray-400 hover:text-gray-200"
                   href="#"
                 >
                   Privacidade
@@ -337,27 +337,27 @@ export default function Footer() {
               </div>
             </div>
 
-            <div class="flex justify-between items-center">
-              <div class="mt-3 sm:hidden">
+            <div className="flex justify-between items-center">
+              <div className="mt-3 sm:hidden">
                 <a
-                  class="flex-none text-xl font-semibold dark:text-white"
+                  className="flex-none text-xl font-semibold text-white"
                   href="#"
                   aria-label="Brand"
                 >
                   Brand
                 </a>
-                <p class="mt-1 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+                <p className="mt-1 text-xs sm:text-sm text-gray-600 text-gray-400">
                   © 2022 Preline.
                 </p>
               </div>
 
-              <div class="space-x-4">
+              <div className="space-x-4">
                 <a
-                  class="inline-block text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
+                  className="inline-block text-gray-500 hover:text-gray-800 hover:text-gray-200"
                   href="#"
                 >
                   <svg
-                    class="w-4 h-4"
+                    className="w-4 h-4"
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
@@ -368,11 +368,11 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a
-                  class="inline-block text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
+                  className="inline-block text-gray-500 hover:text-gray-800 hover:text-gray-200"
                   href="#"
                 >
                   <svg
-                    class="w-4 h-4"
+                    className="w-4 h-4"
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
@@ -383,11 +383,11 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a
-                  class="inline-block text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
+                  className="inline-block text-gray-500 hover:text-gray-800 hover:text-gray-200"
                   href="#"
                 >
                   <svg
-                    class="w-4 h-4"
+                    className="w-4 h-4"
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
