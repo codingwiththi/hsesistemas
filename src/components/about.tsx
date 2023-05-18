@@ -1,7 +1,13 @@
 import Image from "next/image";
 import React from "react";
 import Background from "../../public/images/background.png";
-import { AcademicCapIcon } from "@heroicons/react/24/outline";
+import {
+  AcademicCapIcon,
+  UserGroupIcon,
+  CursorArrowRippleIcon,
+  CloudArrowUpIcon,
+  MegaphoneIcon,
+} from "@heroicons/react/24/outline";
 import Card from "./Card";
 
 interface AboutMeProps {}
@@ -22,9 +28,10 @@ const AboutMe: React.FC<AboutMeProps> = () => {
 
         <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14  z-10 mx-20">
           <div className="flex flex-col items-center justify-center space-y-6 lg:space-y-10 text-center">
-            <h2 className="text-3xl  font-bold lg:text-4xl text-blue-950">
-              Conheça a HSE Sistemas - especialistas em tecnologia para negócios
+            <h2 className="text-3xl  font-bold lg:text-4xl text-blue-950 ">
+              Aliados na busca pelo sucesso
             </h2>
+            <div className="border-b-2 border-[#1cb1da] w-1/4"></div>
             <p className="mt-3 text-gray-800">
               Com 8 anos de experiência, a HSE Sistemas é uma empresa líder em
               tecnologia e serviços de ponta. Oferecemos soluções adaptáveis
@@ -34,24 +41,24 @@ const AboutMe: React.FC<AboutMeProps> = () => {
             </p>
             <div className="flex flex-row gap-4">
               <Card
-                icon={AcademicCapIcon}
-                title="Título do Cartão"
-                description="Esta é a descrição do cartão. Aqui você pode colocar mais informações sobre o assunto do cartão."
+                icon={UserGroupIcon}
+                title="Suporte assistido"
+                description="Tenha ao seu lado uma equipe conectada e proativa para lhe ajudar a resolver seus problemas e vencer suas dificuldades."
               />
               <Card
-                icon={AcademicCapIcon}
-                title="Título do Cartão"
-                description="Esta é a descrição do cartão. Aqui você pode colocar mais informações sobre o assunto do cartão."
+                icon={CursorArrowRippleIcon}
+                title="Customização"
+                description="Softwares inovadores e customizáveis, para atender todas as legislações e necessidades do seu negócio."
               />
               <Card
-                icon={AcademicCapIcon}
-                title="Título do Cartão"
-                description="Esta é a descrição do cartão. Aqui você pode colocar mais informações sobre o assunto do cartão."
+                icon={MegaphoneIcon}
+                title="Consultoria"
+                description="Nossa consultoria na customização do seu software vai muito além do básico. Estaremos com você ao longo da sua evolução."
               />
               <Card
-                icon={AcademicCapIcon}
-                title="Título do Cartão"
-                description="Esta é a descrição do cartão. Aqui você pode colocar mais informações sobre o assunto do cartão."
+                icon={CloudArrowUpIcon}
+                title="Backup na nuvem"
+                description="Oferece segurança para os arquivos importantes do seu negócio, e além disso, você têm facilidade de acesso."
               />
             </div>
           </div>

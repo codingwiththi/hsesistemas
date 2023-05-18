@@ -4,6 +4,10 @@ import Form from "@/components/form";
 import Image from "next/image";
 // import heroimg from "@/public/images/heroimg.png";
 import heroimg from "../../public/images/heroimg.png";
+import mockup2 from "../../public/images/mockup2.png";
+import mockup3 from "../../public/images/mockup3.png";
+import mockup4 from "../../public/images/mockup4.png";
+import mockup5 from "../../public/images/mockup5.png";
 
 interface HeroProps {}
 
@@ -13,14 +17,14 @@ const Hero: React.FC<HeroProps> = () => {
       <div className="max-w-[85rem] mx-auto p-4 sm:p-6  lg:px-10  ">
         {/* <!-- Grid --> */}
         <div className="flex flex-row  lg:items-center ">
-          <div className="flex flex-col  items-center sm:items-start text-center sm:text-start sm:w-2/3 sm:pr-32">
-            <h1 className="block text-lg font-bold text-gray-800 sm:text-xl md:text-5xl lg:text-6xl ">
-              Impulsione seu negócio com a solução de gestão mais eficiente e
-              inovadora
+          <div className="flex flex-col  items-center sm:items-start text-center sm:text-start sm:w-1/2 sm:pr-16">
+            <h1 className="block text-lg font-bold text-gray-800 sm:text-xl md:text-5xl lg:text-7xl ">
+              O Sistema perfeito para o seu sucesso
             </h1>
             <p className="mt-3 text-lg lg:text-2xl text-gray-800 ">
-              Eleve-se ao topo com ousadia, uma equipe excepcional e tecnologias
-              de ponta
+              Otimize os processos da sua empresa, integrando todos os setores,
+              unificando a comunicação entre os departamentos e centralizando
+              todas as informações em um único sistema
             </p>
 
             <div className="mt-5 lg:mt-8 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 ">
@@ -51,8 +55,10 @@ const Hero: React.FC<HeroProps> = () => {
           {/* <div className="hidden sm:flex flex-col    justify-center items-center   bg-gray-50 rounded-lg shadow-lg border border-[#1cb1da] w-1/3">
             <Form />
           </div> */}
-          <div className="hidden sm:flex flex-col    justify-center items-center     w-1/3">
-            <Image src={heroimg} alt="Picture of the author" width={450} />
+          <div className="hidden sm:flex flex-col    justify-center items-center     w-1/2">
+            {/* <Image src={mockup2} alt="Picture of the author" height={600} /> */}
+            {/* <Image src={mockup3} alt="Picture of the author" width={300} /> */}
+            <Image src={mockup5} alt="Controle On" width={600} />
           </div>
           {/* <!-- End Col --> */}
         </div>

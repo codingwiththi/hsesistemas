@@ -5,11 +5,12 @@ import Clients from "@/components/Clients";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Solutions from "@/components/Solutions";
 
 export default function Home() {
   return (
     <main>
-      <div className="bg-gradient-to-br from-blue-100 via-[#89c4e0] to-[#1cb1da] dark:bg-gray-800 h-screen ">
+      <div className="bg-[#FAFAFA] dark:bg-gray-800 h-screen ">
         <Navbar />
         <Hero />
       </div>
@@ -18,11 +19,12 @@ export default function Home() {
       </div>
 
       <AboutMe />
+      <Solutions />
       <div className="p-4  bg-[#FAFAFA] dark:bg-gray-800 ">
         <Clients />
       </div>
       <div className="p-4  bg-[#FAFAFA] dark:bg-gray-800 ">
-        <Contact />
+        {/* <Contact /> */}
       </div>
       <div className="p-4  bg-[#052F48] dark:bg-gray-800 ">
         <Footer />

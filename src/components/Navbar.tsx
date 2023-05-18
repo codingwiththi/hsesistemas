@@ -24,31 +24,31 @@ const Navbar: React.FC<NavbarProps> = () => {
           <div className="flex flex-row gap-4 items-center">
             <Link
               href={"#home"}
-              className="text-lg text-white font-semibold hover:border-b-2 border-white"
+              className="text-lg text-blue-950 font-semibold hover:border-b-2 border-white"
             >
               Inicio
             </Link>
             <Link
               href={"#about"}
-              className="text-lg text-white font-semibold hover:border-b-2 border-white"
+              className="text-lg text-blue-950 font-semibold hover:border-b-2 border-white"
             >
               Sobre nós
             </Link>
             <Link
               href={"#solutions"}
-              className="text-lg text-white font-semibold hover:border-b-2 border-white"
+              className="text-lg text-blue-950 font-semibold hover:border-b-2 border-white"
             >
               Soluções
             </Link>
             <Link
               href={"#suport"}
-              className="text-lg text-white font-semibold hover:border-b-2 border-white"
+              className="text-lg text-blue-950 font-semibold hover:border-b-2 border-white"
             >
               Suporte
             </Link>
             <Link
-              href={"#pricing"}
-              className="text-lg text-white font-semibold  bg-indigo-600 px-4 py-2 rounded-lg shadow-lg hover:bg-indigo-500"
+              href={"/contato"}
+              className="text-lg text-white font-semibold  bg-[#1cb1da] px-4 py-2 rounded-lg shadow-lg hover:bg-blue-500"
             >
               Solicite um orçamento
             </Link>
