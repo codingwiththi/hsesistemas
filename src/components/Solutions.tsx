@@ -28,7 +28,7 @@ const Solutions: React.FC<SolutionsProps> = () => {
             </h2>
             <div className="border-b-2 border-[#1cb1da] w-1/4"></div>
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               <CardSolutions
                 icon={TruckIcon}
                 title="Distribuidoras"

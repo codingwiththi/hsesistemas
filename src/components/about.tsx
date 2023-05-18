@@ -39,7 +39,7 @@ const AboutMe: React.FC<AboutMeProps> = () => {
               contínua para atingir, juntos com nossos clientes, resultados
               expressivos e duradouros.
             </p>
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-col md:flex-row gap-4">
               <Card
                 icon={UserGroupIcon}
                 title="Suporte assistido"

@@ -14,11 +14,11 @@ interface HeroProps {}
 const Hero: React.FC<HeroProps> = () => {
   return (
     <>
-      <div className="max-w-[85rem] mx-auto p-4 sm:p-6  lg:px-10  ">
+      <div className="max-w-[85rem] mx-auto p-4 sm:p-6  lg:px-10   ">
         {/* <!-- Grid --> */}
-        <div className="flex flex-row  lg:items-center ">
+        <div className="flex flex-col sm:flex-row  lg:items-center ">
           <div className="flex flex-col  items-center sm:items-start text-center sm:text-start sm:w-1/2 sm:pr-16">
-            <h1 className="block text-lg font-bold text-gray-800 sm:text-xl md:text-5xl lg:text-7xl ">
+            <h1 className="block text-4xl font-bold text-gray-800  md:text-5xl lg:text-7xl ">
               O Sistema perfeito para o seu sucesso
             </h1>
             <p className="mt-3 text-lg lg:text-2xl text-gray-800 ">
@@ -55,7 +55,7 @@ const Hero: React.FC<HeroProps> = () => {
           {/* <div className="hidden sm:flex flex-col    justify-center items-center   bg-gray-50 rounded-lg shadow-lg border border-[#1cb1da] w-1/3">
             <Form />
           </div> */}
-          <div className="hidden sm:flex flex-col    justify-center items-center     w-1/2">
+          <div className=" flex sm:flex-col flex-row    justify-center items-center     sm:w-1/2">
             {/* <Image src={mockup2} alt="Picture of the author" height={600} /> */}
             {/* <Image src={mockup3} alt="Picture of the author" width={300} /> */}
             <Image src={mockup5} alt="Controle On" width={600} />

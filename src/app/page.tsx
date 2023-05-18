@@ -10,7 +10,7 @@ import Solutions from "@/components/Solutions";
 export default function Home() {
   return (
     <main>
-      <div className="bg-[#FAFAFA] dark:bg-gray-800 h-screen ">
+      <div className="bg-[#FAFAFA] dark:bg-gray-800 h-full  ">
         <Navbar />
         <Hero />
       </div>
