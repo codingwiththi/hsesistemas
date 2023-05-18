@@ -18,10 +18,10 @@ const Hero: React.FC<HeroProps> = () => {
         {/* <!-- Grid --> */}
         <div className="flex flex-col sm:flex-row  lg:items-center ">
           <div className="flex flex-col  items-center sm:items-start text-center sm:text-start sm:w-1/2 sm:pr-16">
-            <h1 className="block text-4xl font-bold text-gray-800  md:text-5xl lg:text-7xl ">
+            <h1 className="block text-4xl font-bold text-blue-950 dark:text-blue-50  md:text-5xl lg:text-7xl ">
               O Sistema perfeito para o seu sucesso
             </h1>
-            <p className="mt-3 text-lg lg:text-2xl text-gray-800 ">
+            <p className="mt-3 text-lg lg:text-2xl text-blue-950 dark:text-blue-50">
               Otimize os processos da sua empresa, integrando todos os setores,
               unificando a comunicação entre os departamentos e centralizando
               todas as informações em um único sistema

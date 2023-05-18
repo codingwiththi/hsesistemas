@@ -1,20 +1,21 @@
 import Image from "next/image";
 import React from "react";
 import Mockup from "../../public/images/mockup.png";
+import Mockup6 from "../../public/images/mockup6.png";
 
 interface SystemSectionProps {}
 
 const SystemSection: React.FC<SystemSectionProps> = () => {
   return (
     <section id="aboutme">
-      <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-[#FAFAFA]">
+      <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-[#FAFAFA] dark:bg-blue-950">
         <div className="grid md:grid-cols-2 gap-8">
           <div className="lg:w-3/4">
-            <h2 className="text-3xl  font-bold lg:text-4xl text-blue-950  ">
+            <h2 className="text-3xl  font-bold lg:text-4xl text-blue-950 dark:text-blue-50 ">
               O sistema perfeito Para o seu sucesso!
             </h2>
             <div className="lg:w-1/4 border-b-2 border-[#1cb1da] mt-8"></div>
-            <p className="mt-8 text-blue-950">
+            <p className="mt-8 text-blue-950 dark:text-blue-50">
               O ControleON é um software de gestão que incorpora todos os
               setores de uma empresa, centralizando todas as informações em um
               único sistema. Além disso, unifica a comunicação entre os
@@ -44,7 +45,7 @@ const SystemSection: React.FC<SystemSectionProps> = () => {
           </div>
 
           <div className="space-y-6 lg:space-y-10">
-            <Image src={Mockup} alt="Mockup" height={500} />
+            <Image src={Mockup6} alt="Mockup" width={800} />
             {/* <!-- End Icon Block --> */}
           </div>
           {/* <!-- End Col --> */}

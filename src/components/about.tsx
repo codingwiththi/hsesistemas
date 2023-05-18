@@ -15,7 +15,7 @@ interface AboutMeProps {}
 const AboutMe: React.FC<AboutMeProps> = () => {
   return (
     <section id="aboutme">
-      <div className="relative p-4  bg-[#fafafa] dark:bg-gray-800">
+      <div className="relative p-4  bg-[#fafafa] dark:bg-blue-950">
         <svg
           className="absolute z-0 w-28 "
           viewBox="0 0 255 260"
@@ -28,11 +28,11 @@ const AboutMe: React.FC<AboutMeProps> = () => {
 
         <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14  z-10 mx-20">
           <div className="flex flex-col items-center justify-center space-y-6 lg:space-y-10 text-center">
-            <h2 className="text-3xl  font-bold lg:text-4xl text-blue-950 ">
+            <h2 className="text-3xl  font-bold lg:text-4xl text-blue-950 dark:text-blue-50">
               Aliados na busca pelo sucesso
             </h2>
             <div className="border-b-2 border-[#1cb1da] w-1/4"></div>
-            <p className="mt-3 text-gray-800">
+            <p className="mt-3 text-blue-900 dark:text-blue-50">
               Com 8 anos de experiência, a HSE Sistemas é uma empresa líder em
               tecnologia e serviços de ponta. Oferecemos soluções adaptáveis
               para negócios de todos os setores, sempre buscando a melhoria

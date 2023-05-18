@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Clients() {
   return (
-    <div className="relative p-4  bg-[#fafafa] dark:bg-gray-800">
+    <div className="relative p-4  bg-[#fafafa] dark:bg-blue-950">
       <svg
         className="absolute z-0 w-28 -top-2 right-2"
         viewBox="0 0 255 260"
@@ -15,7 +15,7 @@ export default function Clients() {
         <rect y="97" width="163" height="163" fill="#052F48" />
         <rect x="94" width="161" height="146" fill="#1CB1DA" />
       </svg>
-      <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto dark:bg-gray-800 z-10">
+      <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto  z-10">
         <div className="flex flex-col sm:flex-row justify-center items-center gap-24 ">
           <Link href={"https://fioretto.com.br/"} target="_blank">
             <svg

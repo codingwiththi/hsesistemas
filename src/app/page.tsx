@@ -10,23 +10,23 @@ import Solutions from "@/components/Solutions";
 export default function Home() {
   return (
     <main>
-      <div className="bg-[#FAFAFA] dark:bg-gray-800 h-full  ">
+      <div className="bg-[#FAFAFA] dark:bg-blue-950 h-full  ">
         <Navbar />
         <Hero />
       </div>
-      <div className="p-4  bg-[#FAFAFA] dark:bg-gray-800 ">
+      <div className="p-4  bg-[#FAFAFA] dark:bg-blue-950 ">
         <SystemSection />
       </div>
 
       <AboutMe />
       <Solutions />
-      <div className="p-4  bg-[#FAFAFA] dark:bg-gray-800 ">
+      <div className="p-4  bg-[#FAFAFA] dark:bg-blue-950 ">
         <Clients />
       </div>
-      <div className="p-4  bg-[#FAFAFA] dark:bg-gray-800 ">
+      <div className="p-4  bg-[#FAFAFA] dark:bg-blue-950 ">
         {/* <Contact /> */}
       </div>
-      <div className="p-4  bg-[#052F48] dark:bg-gray-800 ">
+      <div className="p-4  bg-[#052F48] dark:bg-blue-950 ">
         <Footer />
       </div>
     </main>
