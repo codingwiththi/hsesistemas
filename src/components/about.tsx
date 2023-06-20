@@ -15,31 +15,52 @@ interface AboutMeProps {}
 const AboutMe: React.FC<AboutMeProps> = () => {
   return (
     <section id="aboutme">
-      <div className="relative p-4  bg-[#fafafa] dark:bg-blue-950">
-        <svg
-          className="absolute z-0 w-28 "
-          viewBox="0 0 255 260"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+      <div className="relative p-4  bg-[#fafafa] dark:bg-blue-950 z-0 overflow-clip">
+        <div
+          className="absolute left-1/2 transform -translate-x-1/2 top-0 pointer-events-none -z-10"
+          aria-hidden="true"
         >
-          <rect y="97" width="163" height="163" fill="#052F48" />
-          <rect x="94" width="161" height="146" fill="#1CB1DA" />
-        </svg>
+          <svg
+            width="1360"
+            height="578"
+            viewBox="0 0 1360 578"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient
+                x1="50%"
+                y1="0%"
+                x2="50%"
+                y2="100%"
+                id="illustration-01"
+              >
+                <stop stopColor="#FFF" offset="0%" />
+                <stop stopColor="#EAEAEA" offset="77.402%" />
+                <stop stopColor="#DFDFDF" offset="100%" />
+              </linearGradient>
+            </defs>
+            <g fill="url(#illustration-01)" fillRule="evenodd">
+              <circle cx="1232" cy="128" r="128" />
+              <circle cx="155" cy="443" r="64" />
+            </g>
+          </svg>
+        </div>
 
         <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14  z-10 mx-20">
-          <div className="flex flex-col items-center justify-center space-y-6 lg:space-y-10 text-center">
-            <h2 className="text-3xl  font-bold lg:text-4xl text-blue-950 dark:text-blue-50">
+          <div className="flex flex-col items-center justify-center  text-center">
+            <h2 className="text-3xl  md:text-6xl mb-4 text-blue-950 mb-4">
               Aliados na busca pelo sucesso
             </h2>
-            <div className="border-b-2 border-[#1cb1da] w-1/4"></div>
-            <p className="mt-3 text-blue-900 dark:text-blue-50">
+
+            <p className="mt-3 text-blue-950 dark:text-blue-50">
               Com 8 anos de experiência, a HSE Sistemas é uma empresa líder em
               tecnologia e serviços de ponta. Oferecemos soluções adaptáveis
               para negócios de todos os setores, sempre buscando a melhoria
               contínua para atingir, juntos com nossos clientes, resultados
               expressivos e duradouros.
             </p>
-            <div className="flex flex-col md:flex-row gap-4">
+            <div className="border-b-2 border-[#1cb1da] w-1/4 mt-8"></div>
+            <div className="flex flex-col md:flex-row gap-4 mt-8">
               <Card
                 icon={UserGroupIcon}
                 title="Suporte assistido"

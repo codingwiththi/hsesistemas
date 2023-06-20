@@ -11,9 +11,10 @@ const SystemSection: React.FC<SystemSectionProps> = () => {
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-[#FAFAFA] dark:bg-blue-950">
         <div className="grid md:grid-cols-2 gap-8">
           <div className="lg:w-3/4">
-            <h2 className="text-3xl  font-bold lg:text-4xl text-blue-950 dark:text-blue-50 ">
+            <h2 className="text-3xl  md:text-6xl mb-4 text-blue-950">
               O sistema perfeito Para o seu sucesso!
             </h2>
+
             <div className="lg:w-1/4 border-b-2 border-[#1cb1da] mt-8"></div>
             <p className="mt-8 text-blue-950 dark:text-blue-50">
               O ControleON é um software de gestão que incorpora todos os
