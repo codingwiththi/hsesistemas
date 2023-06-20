@@ -1,93 +1,59 @@
-// import Image from "next/image";
-// import logo from "../../public/images/logohse.png";
-// import Link from "next/link";
-
-// interface NavbarProps {}
-
-// const Navbar: React.FC<NavbarProps> = () => {
-//   return (
-//     <>
-//       <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full  text-sm py-3 sm:py-0 ">
-//         <nav
-//           className="relative max-w-7xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 "
-//           aria-label="Global"
-//         >
-//           <div className="flex items-center sm:justify-between justify-center ">
-//             <Image
-//               src={logo}
-//               alt="HSE Sistemas"
-//               width={200}
-//               height={200}
-//               className="py-4"
-//             />
-//           </div>
-//           <div className="flex flex-row gap-4 items-center">
-//             <Link
-//               href={"#home"}
-//               className="text-lg text-blue-950 font-semibold hover:border-b-2 border-white"
-//             >
-//               Inicio
-//             </Link>
-//             <Link
-//               href={"#about"}
-//               className="text-lg text-blue-950 font-semibold hover:border-b-2 border-white"
-//             >
-//               Sobre nós
-//             </Link>
-//             <Link
-//               href={"#solutions"}
-//               className="text-lg text-blue-950 font-semibold hover:border-b-2 border-white"
-//             >
-//               Soluções
-//             </Link>
-//             <Link
-//               href={"#suport"}
-//               className="text-lg text-blue-950 font-semibold hover:border-b-2 border-white"
-//             >
-//               Suporte
-//             </Link>
-//             <Link
-//               href={"/contato"}
-//               className="text-lg text-white font-semibold  bg-[#1cb1da] px-4 py-2 rounded-lg shadow-lg hover:bg-blue-500"
-//             >
-//               Solicite um orçamento
-//             </Link>
-//           </div>
-//         </nav>
-//       </header>
-//     </>
-//   );
-// };
-
-// export default Navbar;
 "use client";
-
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Disclosure } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import logo from "../../public/images/logohse.png";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
-const navigation = [
+interface NavigationItem {
+  name: string;
+  href: string;
+  current?: boolean;
+}
+
+const navigation: NavigationItem[] = [
   { name: "Inicio", href: "/" },
   { name: "Sobre nós", href: "/sobre" },
   { name: "Soluções", href: "/solucoes" },
   { name: "Suporte", href: "/suporte" },
 ];
 
-function classNames(...classes) {
+function classNames(...classes: string[]): string {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Navbar() {
+  const [top, setTop] = useState<boolean>(true);
+
+  const scrollHandler = () => {
+    window.pageYOffset > 10 ? setTop(false) : setTop(true);
+  };
+
+  useEffect(() => {
+    scrollHandler();
+    window.addEventListener("scroll", scrollHandler);
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, [top]);
+
   return (
-    <Disclosure as="nav" className="bg-[#fafafa]">
+    <Disclosure
+      as="nav"
+      className={` w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
+        !top ? "bg-white fixed backdrop-blur-sm shadow-lg" : ""
+      }`}
+    >
       {({ open }) => (
         <>
-          <div className="mx-auto px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-32 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <div
+            className={`${
+              !top
+                ? "mx-auto max-w-7xl p-1 md:p-2 lg:p-3"
+                : "mx-auto max-w-7xl p-2 md:p-4 lg:p-6"
+            }`}
+          >
+            <div className="relative flex  h-full items-center justify-between">
+              <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-blue-950 hover:bg-blue-950 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
@@ -98,25 +64,32 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <Image
                     src={logo}
                     alt="HSE Sistemas"
                     width={200}
                     height={200}
-                    className="block  lg:hidden"
+                    className={`${!top ? "hidden" : "block  lg:hidden"}`}
                   />
                   <Image
                     src={logo}
                     alt="HSE Sistemas"
                     width={200}
                     height={200}
-                    className="hidden  lg:block"
+                    className={`${!top ? "hidden" : "hidden  lg:block "}`}
+                  />
+                  <Image
+                    src={logo}
+                    alt="HSE Sistemas"
+                    width={150}
+                    height={150}
+                    className={`${!top ? "" : "hidden"}`}
                   />
                 </div>
               </div>
-              <div className="hidden sm:ml-6 sm:block">
+              <div className="hidden md:ml-6 md:block">
                 <div className="flex flex-row justify-center items-center space-x-4">
                   {navigation.map((item) => (
                     <a
@@ -141,7 +114,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="md:hidden">
             <div className="flex flex-col gap-4 space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <Disclosure.Button

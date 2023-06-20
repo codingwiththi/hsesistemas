@@ -6,6 +6,8 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Solutions from "@/components/Solutions";
 import Navbar from "@/components/Navbar";
+import Testimonials from "@/components/testimonials";
+import StatsComponent from "@/components/stats";
 
 export default function Home() {
   return (
@@ -19,9 +21,11 @@ export default function Home() {
       </div>
 
       <AboutMe />
+      <StatsComponent />
       <Solutions />
       <div className="p-4  bg-[#FAFAFA] dark:bg-blue-950 ">
-        <Clients />
+        {/* <Clients /> */}
+        <Testimonials />
       </div>
       <div className="p-4  bg-[#FAFAFA] dark:bg-blue-950 ">
         {/* <Contact /> */}
