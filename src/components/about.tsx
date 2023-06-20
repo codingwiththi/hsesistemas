@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import Background from "../../public/images/background.png";
 import {
   AcademicCapIcon,
@@ -9,10 +10,20 @@ import {
   MegaphoneIcon,
 } from "@heroicons/react/24/outline";
 import Card from "./Card";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface AboutMeProps {}
 
 const AboutMe: React.FC<AboutMeProps> = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      disable: "phone",
+      duration: 700,
+      easing: "ease-out-cubic",
+    });
+  });
   return (
     <section id="aboutme">
       <div className="relative p-4  bg-[#fafafa] dark:bg-blue-950 z-0 overflow-clip">
@@ -48,7 +59,7 @@ const AboutMe: React.FC<AboutMeProps> = () => {
 
         <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14  z-10 mx-20">
           <div className="flex flex-col items-center justify-center  text-center">
-            <h2 className="text-3xl  md:text-6xl mb-4 text-blue-950 mb-4">
+            <h2 className="text-3xl  md:text-6xl  text-blue-950 mb-4">
               Aliados na busca pelo sucesso
             </h2>
 
@@ -60,7 +71,10 @@ const AboutMe: React.FC<AboutMeProps> = () => {
               expressivos e duradouros.
             </p>
             <div className="border-b-2 border-[#1cb1da] w-1/4 mt-8"></div>
-            <div className="flex flex-col md:flex-row gap-4 mt-8">
+            <div
+              className="flex flex-col md:flex-row gap-4 mt-8"
+              data-aos="zoom-y-out"
+            >
               <Card
                 icon={UserGroupIcon}
                 title="Suporte assistido"

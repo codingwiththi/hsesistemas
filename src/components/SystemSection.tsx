@@ -1,11 +1,22 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import Mockup from "../../public/images/mockup.png";
 import Mockup6 from "../../public/images/mockup6.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface SystemSectionProps {}
 
 const SystemSection: React.FC<SystemSectionProps> = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      disable: "phone",
+      duration: 700,
+      easing: "ease-out-cubic",
+    });
+  });
   return (
     <section id="aboutme">
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-[#FAFAFA] dark:bg-blue-950">
@@ -16,7 +27,10 @@ const SystemSection: React.FC<SystemSectionProps> = () => {
             </h2>
 
             <div className="lg:w-1/4 border-b-2 border-[#1cb1da] mt-8"></div>
-            <p className="mt-8 text-blue-950 dark:text-blue-50">
+            <p
+              className="mt-8 text-blue-950 dark:text-blue-50"
+              data-aos="zoom-y-out"
+            >
               O ControleON é um software de gestão que incorpora todos os
               setores de uma empresa, centralizando todas as informações em um
               único sistema. Além disso, unifica a comunicação entre os
@@ -25,7 +39,10 @@ const SystemSection: React.FC<SystemSectionProps> = () => {
               ideal para o seu negócio, vai permitir que você otimize seus
               processos e ainda auxiliar nas suas tomadas de decisões.
             </p>
-            <p className="mt-5 inline-flex items-center gap-x-2 font-medium text-[#1cb1da] hover:text-blue-200 cursor-pointer">
+            <p
+              data-aos="zoom-y-out"
+              className="mt-5 inline-flex items-center gap-x-2 font-medium text-[#1cb1da] hover:text-blue-200 cursor-pointer"
+            >
               Solicite um contato para saber mais
               <svg
                 className="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1"
@@ -46,7 +63,12 @@ const SystemSection: React.FC<SystemSectionProps> = () => {
           </div>
 
           <div className="space-y-6 lg:space-y-10">
-            <Image src={Mockup6} alt="Mockup" width={800} />
+            <Image
+              src={Mockup6}
+              alt="Mockup"
+              width={800}
+              data-aos="zoom-y-out"
+            />
             {/* <!-- End Icon Block --> */}
           </div>
           {/* <!-- End Col --> */}
