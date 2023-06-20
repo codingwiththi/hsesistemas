@@ -19,7 +19,7 @@ const SystemSection: React.FC<SystemSectionProps> = () => {
   });
   return (
     <section id="aboutme">
-      <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-[#FAFAFA] dark:bg-blue-950">
+      <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-[#FAFAFA] ">
         <div className="grid md:grid-cols-2 gap-8">
           <div className="lg:w-3/4">
             <h2 className="text-3xl  md:text-6xl mb-4 text-blue-950">
@@ -27,10 +27,7 @@ const SystemSection: React.FC<SystemSectionProps> = () => {
             </h2>
 
             <div className="lg:w-1/4 border-b-2 border-[#1cb1da] mt-8"></div>
-            <p
-              className="mt-8 text-blue-950 dark:text-blue-50"
-              data-aos="zoom-y-out"
-            >
+            <p className="mt-8 text-blue-950 " data-aos="zoom-y-out">
               O ControleON é um software de gestão que incorpora todos os
               setores de uma empresa, centralizando todas as informações em um
               único sistema. Além disso, unifica a comunicação entre os

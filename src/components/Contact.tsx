@@ -4,17 +4,17 @@ export default function Contact() {
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div className="max-w-2xl lg:max-w-5xl mx-auto">
           <div className="text-center">
-            <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">
+            <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl ">
               Solicite um contato
             </h1>
-            <p className="mt-1 text-gray-600 dark:text-gray-400">
+            <p className="mt-1 text-gray-600 ">
               Adoraríamos conversar sobre como podemos ajudá-lo.
             </p>
           </div>
 
           <div className="mt-12 grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
-            <div className="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 dark:border-gray-700 bg-gradient-to-br from-blue-100 via-[#89c4e0] to-[#1cb1da] dark:bg-gray-800">
-              <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-gray-200">
+            <div className="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8  bg-gradient-to-br from-blue-100 via-[#89c4e0] to-[#1cb1da] ">
+              <h2 className="mb-8 text-xl font-semibold text-gray-800 ">
                 Preencha o formulário
               </h2>
 
@@ -32,7 +32,7 @@ export default function Contact() {
                         type="text"
                         name="hs-firstname-contacts-1"
                         id="hs-firstname-contacts-1"
-                        className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                        className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500   "
                         placeholder="Primeiro Nome"
                       />
                     </div>
@@ -48,7 +48,7 @@ export default function Contact() {
                         type="text"
                         name="hs-lastname-contacts-1"
                         id="hs-lastname-contacts-1"
-                        className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                        className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500   "
                         placeholder="Sobrenome"
                       />
                     </div>
@@ -63,7 +63,7 @@ export default function Contact() {
                       name="hs-email-contacts-1"
                       id="hs-email-contacts-1"
                       autoComplete="email"
-                      className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                      className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500   "
                       placeholder="Email"
                     />
                   </div>
@@ -76,7 +76,7 @@ export default function Contact() {
                       type="text"
                       name="hs-phone-number-1"
                       id="hs-phone-number-1"
-                      className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                      className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500   "
                       placeholder="Telefone"
                     />
                   </div>
@@ -89,7 +89,7 @@ export default function Contact() {
                       id="hs-about-contacts-1"
                       name="hs-about-contacts-1"
                       rows={4}
-                      className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                      className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500   "
                       placeholder="Descreva a sua solicitação..."
                     ></textarea>
                   </div>
@@ -99,7 +99,7 @@ export default function Contact() {
                 <div className="mt-4 grid">
                   <button
                     type="submit"
-                    className="inline-flex justify-center items-center gap-x-3 text-center bg-[#052F48] hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+                    className="inline-flex justify-center items-center gap-x-3 text-center bg-[#052F48] hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 "
                   >
                     Enviar consulta
                   </button>
@@ -114,11 +114,11 @@ export default function Contact() {
             </div>
             {/* <!-- End Card --> */}
 
-            <div className="divide-y divide-gray-200 dark:divide-gray-800">
+            <div className="divide-y divide-gray-200 ">
               {/* <!-- Icon Block --> */}
               <div className="flex gap-x-7 py-6">
                 <svg
-                  className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200"
+                  className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 "
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -129,14 +129,14 @@ export default function Contact() {
                   <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
                 </svg>
                 <div>
-                  <h3 className="font-semibold text-gray-800 dark:text-gray-200">
+                  <h3 className="font-semibold text-gray-800 ">
                     Base de conhecimento
                   </h3>
                   <p className="mt-1 text-sm text-gray-500">
                     Estamos aqui para ajudar com qualquer dúvida ou problema.
                   </p>
                   <a
-                    className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800  "
                     href="#"
                   >
                     Entre em contato com o suporte
@@ -160,7 +160,7 @@ export default function Contact() {
               </div>
               <div className="flex gap-x-7 py-6">
                 <svg
-                  className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200"
+                  className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 "
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -171,15 +171,13 @@ export default function Contact() {
                   <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
                 </svg>
                 <div>
-                  <h3 className="font-semibold text-gray-800 dark:text-gray-200">
-                    FAQ
-                  </h3>
+                  <h3 className="font-semibold text-gray-800 ">FAQ</h3>
                   <p className="mt-1 text-sm text-gray-500">
                     Pesquise nosso FAQ para obter respostas para qualquer coisa
                     que você possa perguntar.
                   </p>
                   <a
-                    className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800  "
                     href="#"
                   >
                     Visite o FAQ
@@ -203,7 +201,7 @@ export default function Contact() {
               </div>
               {/* <div class=" flex gap-x-7 py-6">
                   <svg
-                    class="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200"
+                    class="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 "
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
@@ -214,14 +212,14 @@ export default function Contact() {
                     <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z" />
                   </svg>
                   <div>
-                    <h3 class="font-semibold text-gray-800 dark:text-gray-200">
+                    <h3 class="font-semibold text-gray-800 ">
                       Developer APIs
                     </h3>
                     <p class="mt-1 text-sm text-gray-500">
                       Check out our development quickstart guide.
                     </p>
                     <a
-                      class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                      class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800  "
                       href="#"
                     >
                       Contact sales
@@ -245,7 +243,7 @@ export default function Contact() {
                 </div>
                 <div class=" flex gap-x-7 py-6">
                   <svg
-                    class="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200"
+                    class="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 "
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
@@ -255,14 +253,14 @@ export default function Contact() {
                     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
                   </svg>
                   <div>
-                    <h3 class="font-semibold text-gray-800 dark:text-gray-200">
+                    <h3 class="font-semibold text-gray-800 ">
                       Contact us by email
                     </h3>
                     <p class="mt-1 text-sm text-gray-500">
                       If you wish to write us an email instead please use
                     </p>
                     <a
-                      class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                      class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800  "
                       href="#"
                     >
                       example@site.com

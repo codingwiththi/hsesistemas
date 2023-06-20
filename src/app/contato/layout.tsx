@@ -13,7 +13,7 @@ export default function ContatoLayout({
       <Navbar />
 
       {children}
-      <div className="p-4  bg-[#052F48] dark:bg-gray-800 ">
+      <div className="p-4  bg-[#052F48]  ">
         <Footer />
       </div>
     </section>

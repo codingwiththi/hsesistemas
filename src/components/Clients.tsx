@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Clients() {
   return (
-    <div className="relative p-4  bg-[#fafafa] dark:bg-blue-950">
+    <div className="relative p-4  bg-[#fafafa] ">
       <svg
         className="absolute z-0 w-28 -top-2 right-2"
         viewBox="0 0 255 260"
@@ -162,12 +162,12 @@ export default function Clients() {
               alt="Picture of the author"
               width={80}
               height={60}
-              className=" rounded-xl dark:bg-gray-200"
+              className=" rounded-xl "
             />
           </Link>
           <Link href={"https://fioretto.com.br/"} target="_blank">
             <svg
-              className="w-20 h-auto sm:w-24 text-gray-700 dark:text-gray-300"
+              className="w-20 h-auto sm:w-24 text-gray-700 "
               width="140"
               height="70"
               viewBox="0 0 140 47"
@@ -222,7 +222,7 @@ export default function Clients() {
           </Link>
           {/* <div className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3"> */}
           {/* card */}
-          {/* <div className="flex flex-col border border-gray-200 rounded-xl dark:border-gray-700 shadow-md hover:shadow-2xl">
+          {/* <div className="flex flex-col border border-gray-200 rounded-xl  shadow-md hover:shadow-2xl">
             <div className="flex-auto p-4 md:p-6">
               <svg
                 width="120"
@@ -362,7 +362,7 @@ export default function Clients() {
                 </defs>
               </svg>
 
-              <p className="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white">
+              <p className="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl ">
                 <em>
                   "Adorei a facilidade de uso e as muitas opções de relatórios e
                   consultas disponíveis para gerenciar meus clientes."
@@ -371,23 +371,23 @@ export default function Clients() {
             </div>
 
             <div className="p-4 rounded-b-xl md:px-6">
-              <h3 className="text-sm font-semibold text-gray-800 sm:text-base dark:text-gray-200">
+              <h3 className="text-sm font-semibold text-gray-800 sm:text-base ">
                 Fulano de tal
               </h3>
               <p className="text-sm text-gray-500">Gerente sênior de vendas</p>
             </div>
           </div>
-          <div className="flex flex-col border border-gray-200 rounded-xl dark:border-gray-700 shadow-md hover:shadow-2xl">
+          <div className="flex flex-col border border-gray-200 rounded-xl  shadow-md hover:shadow-2xl">
             <div className="flex-auto p-4 md:p-6">
               <Image
                 src={primepisos}
                 alt="Picture of the author"
                 width={80}
                 height={60}
-                className=" rounded-xl dark:bg-gray-200"
+                className=" rounded-xl "
               />
 
-              <p className="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white">
+              <p className="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl ">
                 <em>
                   "O sistema é incrivelmente flexível, oferecendo diversas
                   opções de comissão para atender às necessidades únicas do meu
@@ -397,16 +397,16 @@ export default function Clients() {
             </div>
 
             <div className="p-4 rounded-b-xl md:px-6">
-              <h3 className="text-sm font-semibold text-gray-800 sm:text-base dark:text-gray-200">
+              <h3 className="text-sm font-semibold text-gray-800 sm:text-base ">
                 Fulano de Tal
               </h3>
               <p className="text-sm text-gray-500">Operador de Caixa</p>
             </div>
           </div>
-          <div className="flex flex-col border border-gray-200 rounded-xl dark:border-gray-700 shadow-md hover:shadow-2xl">
+          <div className="flex flex-col border border-gray-200 rounded-xl  shadow-md hover:shadow-2xl">
             <div className="flex-auto p-4 md:p-6">
               <svg
-                className="w-20 h-auto sm:w-24 text-gray-700 dark:text-gray-300"
+                className="w-20 h-auto sm:w-24 text-gray-700 "
                 width="140"
                 height="70"
                 viewBox="0 0 140 47"
@@ -459,7 +459,7 @@ export default function Clients() {
                 ></path>
               </svg>
 
-              <p className="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white">
+              <p className="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl ">
                 <em>
                   "O controle avançado de produção e estoque me permitiu
                   otimizar minha operação e aumentar minha eficiência geral."
@@ -468,7 +468,7 @@ export default function Clients() {
             </div>
 
             <div className="p-4 rounded-b-xl md:px-6">
-              <h3 className="text-sm font-semibold text-gray-800 sm:text-base dark:text-gray-200">
+              <h3 className="text-sm font-semibold text-gray-800 sm:text-base ">
                 Fulano de tal
               </h3>
               <p className="text-sm text-gray-500">Diretor de operações</p>

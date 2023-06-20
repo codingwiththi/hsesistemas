@@ -17,15 +17,13 @@ const CardSolutions: FC<CardSolutionsProps> = ({
   return (
     <div className="flex flex-col items-center justify-center   py-6 px-4 text-center gap-4 ">
       <div className="flex flex-row w-full   justify-center items-center">
-        <Icon className="h-11 w-11 text-blue-950 dark:text-blue-50 b-4 " />
+        <Icon className="h-11 w-11 text-blue-950  b-4 " />
       </div>
-      <h2 className="font-bold text-lg mb-2 border-b-2 border-blue-500 dark:text-blue-50 ">
+      <h2 className="font-bold text-lg mb-2 border-b-2 border-blue-500  ">
         {title}
       </h2>
       <div className="h-full  ">
-        <p className="text-gray-600 text-center dark:text-blue-100">
-          {description}
-        </p>
+        <p className="text-gray-600 text-center ">{description}</p>
       </div>
       <Link
         href={href}

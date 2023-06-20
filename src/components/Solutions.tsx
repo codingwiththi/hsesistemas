@@ -20,7 +20,7 @@ interface SolutionsProps {}
 const Solutions: React.FC<SolutionsProps> = () => {
   return (
     <section id="solutions">
-      <div className="relative p-4  bg-[#fafafa] dark:bg-blue-950">
+      <div className="relative p-4  bg-[#fafafa] ">
         <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14  z-10 mx-20">
           <div className="flex flex-col items-center justify-center space-y-6 lg:space-y-10 text-center">
             <h2 className="text-3xl  md:text-6xl mb-4 text-blue-950">

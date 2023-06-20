@@ -12,25 +12,23 @@ import StatsComponent from "@/components/stats";
 export default function Home() {
   return (
     <main>
-      <div className="bg-[#FAFAFA] dark:bg-blue-950 h-full  ">
+      <div className="bg-[#FAFAFA]  h-full  ">
         <Navbar />
         <Hero />
       </div>
-      <div className="p-4  bg-[#FAFAFA] dark:bg-blue-950 ">
+      <div className="p-4  bg-[#FAFAFA]  ">
         <SystemSection />
       </div>
 
       <AboutMe />
       <StatsComponent />
       <Solutions />
-      <div className="p-4  bg-[#FAFAFA] dark:bg-blue-950 ">
+      <div className="p-4  bg-[#FAFAFA]  ">
         {/* <Clients /> */}
         <Testimonials />
       </div>
-      <div className="p-4  bg-[#FAFAFA] dark:bg-blue-950 ">
-        {/* <Contact /> */}
-      </div>
-      <div className="p-4  bg-[#052F48] dark:bg-blue-950 ">
+      <div className="p-4  bg-[#FAFAFA]  ">{/* <Contact /> */}</div>
+      <div className="p-4  bg-[#052F48]  ">
         <Footer />
       </div>
     </main>
