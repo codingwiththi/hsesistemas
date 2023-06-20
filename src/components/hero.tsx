@@ -14,9 +14,9 @@ interface HeroProps {}
 const Hero: React.FC<HeroProps> = () => {
   return (
     <>
-      <div className="max-w-[85rem] mx-auto p-4 sm:p-6  lg:px-10   ">
+      <div className="mx-auto px-2 sm:px-6 lg:px-20 mt-8   ">
         {/* <!-- Grid --> */}
-        <div className="flex flex-col sm:flex-row  lg:items-center ">
+        <div className="flex flex-col sm:flex-row  lg:items-center bg-red-500">
           <div className="flex flex-col  items-center sm:items-start text-center sm:text-start sm:w-1/2 sm:pr-16">
             <h1 className="block text-4xl font-bold text-blue-950 dark:text-blue-50  md:text-5xl lg:text-7xl ">
               O Sistema perfeito para o seu sucesso
